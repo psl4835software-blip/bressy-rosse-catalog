@@ -79,6 +79,9 @@ export default async function HomePage() {
                 <span className="category-brand">BR</span>{category.label}<ArrowUpRight size={14} aria-hidden="true" />
               </Link>
             ))}
+            <Link className="category-link" href="/planchas">
+              Planchas<ArrowUpRight size={14} aria-hidden="true" />
+            </Link>
             <Link className="category-link category-link--rose" href="/catalog/bressy-rosse?category=cosmeticos">
               <span className="category-brand category-brand--rosse">Bressy Rosse</span>Cosméticos<ArrowUpRight size={14} aria-hidden="true" />
             </Link>

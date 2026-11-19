@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import type { BrandSlug } from "@/lib/catalog/types";
 
-type SiteHeaderProps = { active?: "home" | "br" | "bressy-rosse" | "discounts" };
+type SiteHeaderProps = { active?: "home" | "br" | "bressy-rosse" | "planchas" | "discounts" };
 
 export function SiteHeader({ active = "home" }: SiteHeaderProps) {
   return (
@@ -19,6 +19,7 @@ export function SiteHeader({ active = "home" }: SiteHeaderProps) {
         <nav className="nav-primary" aria-label="Navegación principal">
           <Link className="nav-link" href="/catalog/br" aria-current={active === "br" ? "page" : undefined}>BR</Link>
           <Link className="nav-link" href="/catalog/bressy-rosse" aria-current={active === "bressy-rosse" ? "page" : undefined}>Bressy Rosse</Link>
+          <Link className="nav-link" href="/planchas" aria-current={active === "planchas" ? "page" : undefined}>Planchas</Link>
           <Link className="nav-link nav-discounts" href="/descuentos" aria-current={active === "discounts" ? "page" : undefined}>Descuentos</Link>
           <Link className="admin-link" href="/admin/login"><LockKeyhole size={14} aria-hidden="true" /> Administración</Link>
         </nav>
