@@ -2,6 +2,7 @@ import "@fontsource-variable/fraunces";
 import "@fontsource-variable/manrope";
 import "./globals.css";
 import type { Metadata } from "next";
+import { StorefrontProvider } from "@/components/storefront-interactions";
 
 export const metadata: Metadata = {
   title: {
@@ -15,7 +16,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es-BO">
-      <body>{children}</body>
+      <body>
+        <StorefrontProvider>{children}</StorefrontProvider>
+      </body>
     </html>
   );
 }

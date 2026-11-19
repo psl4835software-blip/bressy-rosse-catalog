@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ImagePlus } from "lucide-react";
+import { AddToCartButton, ImageLightboxButton } from "@/components/storefront-interactions";
 import { BRAND_INFO, CATEGORIES, formatPrice, isBrandSlug, promotionIsCurrent } from "@/lib/catalog/constants";
 import { getImageUrl } from "@/lib/catalog/repository";
 import type { BrandSlug, Product } from "@/lib/catalog/types";
@@ -43,17 +43,20 @@ export async function ProductCard({ product }: { product: Product }) {
   const imageUrl = await getImageUrl(product.image_path);
   const isDiscount = promotionIsCurrent(product);
   const brandName = isBrandSlug(product.brand) ? BRAND_INFO[product.brand].name : product.brand;
+  const currentPrice = isDiscount ? product.promo_price! : product.price;
 
   return (
     <article className="product-card">
       <div className="product-image">
         {imageUrl ? (
-          <Image
+          <ImageLightboxButton
             src={imageUrl}
             alt={product.image_alt || product.name}
+            title={product.name}
             fill
             sizes="(max-width: 680px) 50vw, 33vw"
-            unoptimized
+            className="product-image-trigger"
+            imageClassName="product-image-asset"
           />
         ) : (
           <div className="product-image--empty">
@@ -76,6 +79,15 @@ export async function ProductCard({ product }: { product: Product }) {
           <span className="price-current">{formatPrice(product.price)}</span>
         )}
       </div>
+      <AddToCartButton
+        product={{
+          id: `catalog:${product.id}`,
+          name: product.name,
+          brand: brandName,
+          imageUrl,
+          unitPrice: currentPrice,
+        }}
+      />
     </article>
   );
 }

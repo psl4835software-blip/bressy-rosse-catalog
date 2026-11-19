@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { AddToCartButton, ImageLightboxButton } from "@/components/storefront-interactions";
 
 export const metadata: Metadata = {
   title: "Planchas y herramientas para el cabello",
@@ -127,24 +127,37 @@ export default function PlanchasPage() {
           </div>
           <h1 className="page-title">Planchas</h1>
           <p className="page-description">Planchas, secadores, rizadores y cepillos para el cabello. Explora cada modelo y sus características en las imágenes.</p>
+          <p className="planchas-hint">Toca una imagen para ampliarla o agrega tus modelos favoritos al carrito.</p>
         </div>
 
         <section className="planchas-grid" aria-label="Galería de planchas y herramientas para el cabello">
           {items.map((item) => (
             <article className="planchas-item" key={item.src}>
               <div className="planchas-image">
-                <Image
+                <ImageLightboxButton
                   src={item.src}
                   alt={item.alt}
+                  title={item.name}
                   width={item.width}
                   height={item.height}
                   sizes="(max-width: 440px) 100vw, (max-width: 680px) 50vw, (max-width: 920px) 33vw, 25vw"
-                  unoptimized
+                  className="planchas-image-trigger"
+                  imageClassName="planchas-image__asset"
                 />
               </div>
               <div className="planchas-caption">
                 <h2>{item.name}</h2>
                 <p>{item.model}</p>
+                <AddToCartButton
+                  product={{
+                    id: `plancha:${item.src}`,
+                    name: item.name,
+                    brand: "Planchas",
+                    reference: item.model,
+                    imageUrl: item.src,
+                  }}
+                  label="Agregar"
+                />
               </div>
             </article>
           ))}

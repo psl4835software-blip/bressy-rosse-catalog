@@ -1,6 +1,6 @@
 # BR · Bressy Rosse
 
-Catálogo público de BR y Bressy Rosse, con panel privado para administrar productos, precios, imágenes y descuentos. La primera fase permite explorar el catálogo; no incluye carrito, pagos ni sincronización de inventario.
+Catálogo público de BR y Bressy Rosse, con panel privado para administrar productos, precios, imágenes y descuentos. Los visitantes pueden explorar productos, ampliar sus imágenes y preparar consultas de compra por WhatsApp. No incluye pagos ni sincronización de inventario.
 
 ## Arquitectura
 
@@ -126,6 +126,15 @@ El despliegue público actual usa `workers.dev`. El dominio personalizado se con
 - Para aparecer en **Descuentos**, el producto necesita un precio promocional inferior al original y la opción de descuento activada.
 - Las fechas promocionales son opcionales y usan hora de Bolivia (UTC−4).
 - Las imágenes admiten JPG, PNG o WebP, hasta 8 MB. El servidor comprueba el tipo de archivo antes de guardarlo en R2.
+
+## Carrito y pedidos por WhatsApp
+
+- El carrito funciona en los catálogos de BR y Bressy Rosse, Descuentos y Planchas. La selección se guarda en el navegador del visitante; no crea una orden ni procesa pagos.
+- Las imágenes se abren ampliadas al tocarlas, hacer clic o seleccionarlas con el teclado.
+- Cuando se reciba el número de pedidos, configúralo en formato internacional usando solo dígitos (código de país seguido del número).
+- Para desarrollo local, copia `.env.example` a `.env.local` y define `NEXT_PUBLIC_WHATSAPP_NUMBER`.
+- Para producción, crea la variable de repositorio `NEXT_PUBLIC_WHATSAPP_NUMBER` en **GitHub → Settings → Secrets and variables → Actions → Variables**. El workflow de Cloudflare la incorpora durante la compilación; ejecuta el workflow de despliegue después de guardarla.
+- El número es público porque se enlaza desde la página. No guardes credenciales ni tokens en esta variable.
 
 ## Integración futura
 
