@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T19:29:38Z",
+  "title": "Design System: BR · Bressy Rosse",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Tinta ciruela",
+        "canonical": "#29172f",
+        "tonalRamp": [
+          "hsl(285 10% 15%)",
+          "hsl(285 19% 25%)",
+          "hsl(285 27% 35%)",
+          "hsl(285 34% 45%)",
+          "hsl(285 34% 55%)",
+          "hsl(285 31% 65%)",
+          "hsl(285 22% 75%)",
+          "hsl(285 5% 95%)"
+        ]
+      },
+      "rose-accent": {
+        "role": "secondary",
+        "displayName": "Rosa de señal",
+        "canonical": "#d74879",
+        "tonalRamp": [
+          "hsl(339 19% 15%)",
+          "hsl(339 35% 25%)",
+          "hsl(339 51% 35%)",
+          "hsl(339 64% 45%)",
+          "hsl(339 64% 55%)",
+          "hsl(339 58% 65%)",
+          "hsl(339 42% 75%)",
+          "hsl(339 10% 95%)"
+        ]
+      },
+      "berry-deep": {
+        "role": "secondary",
+        "displayName": "Berry profundo",
+        "canonical": "#842650",
+        "tonalRamp": [
+          "hsl(333 17% 15%)",
+          "hsl(333 30% 25%)",
+          "hsl(333 44% 35%)",
+          "hsl(333 55% 45%)",
+          "hsl(333 55% 55%)",
+          "hsl(333 50% 65%)",
+          "hsl(333 36% 75%)",
+          "hsl(333 8% 95%)"
+        ]
+      },
+      "lilac-soft": {
+        "role": "tertiary",
+        "displayName": "Lavanda suave",
+        "canonical": "#b891c4",
+        "tonalRamp": [
+          "hsl(286 9% 15%)",
+          "hsl(286 17% 25%)",
+          "hsl(286 24% 35%)",
+          "hsl(286 30% 45%)",
+          "hsl(286 30% 55%)",
+          "hsl(286 27% 65%)",
+          "hsl(286 20% 75%)",
+          "hsl(286 5% 95%)"
+        ]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Perla",
+        "canonical": "#fbf7fa",
+        "tonalRamp": [
+          "hsl(315 10% 15%)",
+          "hsl(315 18% 25%)",
+          "hsl(315 26% 35%)",
+          "hsl(315 33% 45%)",
+          "hsl(315 33% 55%)",
+          "hsl(315 30% 65%)",
+          "hsl(315 21% 75%)",
+          "hsl(315 5% 95%)"
+        ]
+      },
+      "neutral-surface": {
+        "role": "neutral",
+        "displayName": "Blanco",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "hsl(0 0% 15%)",
+          "hsl(0 0% 25%)",
+          "hsl(0 0% 35%)",
+          "hsl(0 0% 45%)",
+          "hsl(0 0% 55%)",
+          "hsl(0 0% 65%)",
+          "hsl(0 0% 75%)",
+          "hsl(0 0% 95%)"
+        ]
+      },
+      "neutral-muted": {
+        "role": "neutral",
+        "displayName": "Ciruela apagado",
+        "canonical": "#5b4d61",
+        "tonalRamp": [
+          "hsl(282 3% 15%)",
+          "hsl(282 6% 25%)",
+          "hsl(282 9% 35%)",
+          "hsl(282 11% 45%)",
+          "hsl(282 11% 55%)",
+          "hsl(282 10% 65%)",
+          "hsl(282 7% 75%)",
+          "hsl(282 2% 95%)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Fraunces Variable",
+        "purpose": "Titulares de portada, titulares de sección y nombres destacados."
+      },
+      "headline": {
+        "displayName": "Fraunces Variable",
+        "purpose": "Encabezados de sección."
+      },
+      "body": {
+        "displayName": "Manrope Variable",
+        "purpose": "Lectura general, navegación y campos de administración."
+      },
+      "label": {
+        "displayName": "Manrope Variable",
+        "purpose": "Acciones, rótulos de marca y etiquetas breves."
+      }
+    },
+    "shadows": [
+      {
+        "name": "header-ambient",
+        "value": "0 12px 30px rgba(60, 33, 65, 0.1)",
+        "purpose": "Separación ligera de la cabecera de vidrio sobre el fondo claro."
+      },
+      {
+        "name": "showcase-depth",
+        "value": "0 24px 54px rgba(62, 25, 68, 0.2)",
+        "purpose": "Eleva el gran campo de portada sobre el fondo perlado."
+      },
+      {
+        "name": "glass-launcher",
+        "value": "0 16px 32px rgba(32, 9, 38, 0.19)",
+        "purpose": "Da profundidad a los accesos de marca translúcidos."
+      },
+      {
+        "name": "empty-state-soft",
+        "value": "0 12px 28px rgba(74, 45, 83, 0.07)",
+        "purpose": "Mantiene suaves los estados vacíos sobre la superficie clara."
+      }
+    ],
+    "motion": [
+      {
+        "name": "hero-arrival",
+        "value": "720ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Revela el escaparate una sola vez; se desactiva con reduced motion."
+      },
+      {
+        "name": "control-hover",
+        "value": "170–180ms ease",
+        "purpose": "Eleva brevemente botones, navegación y lanzadores."
+      },
+      {
+        "name": "product-image-hover",
+        "value": "550ms cubic-bezier(0.2, 0.75, 0.25, 1)",
+        "purpose": "Zoom sutil al pasar el cursor por una imagen real de producto."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "680px"
+      },
+      {
+        "name": "narrow-mobile",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Cabecera flotante",
+      "kind": "nav",
+      "refersTo": "nav-floating",
+      "description": "La navegación agrupa ambas marcas, descuentos y administración dentro de una capa translúcida.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegación principal\"><a class=\"ds-nav__mark\" href=\"#\">BR · Bressy Rosse</a><div class=\"ds-nav__links\"><a href=\"#\">BR</a><a href=\"#\">Bressy Rosse</a><a href=\"#\">Descuentos</a><a class=\"ds-nav__admin\" href=\"#\">Administración</a></div></nav>",
+      "css": ".ds-nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.55rem 1rem 0.55rem 1.15rem; border: 1px solid rgba(255,255,255,0.78); border-radius: 999px; background: rgba(255,255,255,0.78); box-shadow: 0 12px 30px rgba(60,33,65,0.1); backdrop-filter: blur(24px) saturate(165%); color: var(--ink); font: 800 0.75rem/1.2 var(--font-ui); }\n.ds-nav__mark, .ds-nav__links a { color: inherit; text-decoration: none; }\n.ds-nav__links { display: flex; align-items: center; gap: 0.28rem; }\n.ds-nav__links a { min-height: 42px; display: inline-flex; align-items: center; padding: 0.5rem 0.82rem; border-radius: 999px; }\n.ds-nav__links a:hover, .ds-nav__links a[aria-current=\"page\"] { background: #f4e7f1; color: #78284f; }\n.ds-nav__admin { background: #2e1c34; color: #fff !important; }\n.ds-nav a:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }\n@media (max-width: 680px) { .ds-nav { flex-wrap: wrap; border-radius: 25px; } .ds-nav__links { width: 100%; overflow-x: auto; } }"
+    },
+    {
+      "name": "Botón principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción principal clara sobre el fondo oscuro de la portada.",
+      "html": "<a class=\"ds-button ds-button--primary\" href=\"#\">Descubrir Bressy Rosse <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; padding: 0.74rem 1.15rem; border: 1px solid rgba(41,23,47,0.12); border-radius: 999px; font: 800 0.75rem/1.2 var(--font-ui); text-decoration: none; transition: background 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease; }\n.ds-button svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }\n.ds-button--primary { border-color: #fff; background: #fff; color: #552345; box-shadow: 0 8px 20px rgba(24,7,29,0.16); }\n.ds-button--primary:hover { transform: translateY(-2px); border-color: #ffd2e2; background: #ffd2e2; color: #401a38; }\n.ds-button:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }\n.ds-button:active { transform: translateY(0); }\n@media (prefers-reduced-motion: reduce) { .ds-button { transition: none; } }"
+    },
+    {
+      "name": "Botón de vidrio",
+      "kind": "button",
+      "refersTo": "button-glass",
+      "description": "Acción secundaria translúcida para navegar dentro de la portada.",
+      "html": "<a class=\"ds-button-glass\" href=\"#\">Explorar BR <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-button-glass { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; padding: 0.74rem 1.15rem; border: 1px solid rgba(255,255,255,0.54); border-radius: 999px; background: rgba(255,255,255,0.13); color: #fff; backdrop-filter: blur(18px); font: 800 0.75rem/1.2 var(--font-ui); text-decoration: none; transition: background 180ms ease, border-color 180ms ease, transform 180ms ease; }\n.ds-button-glass svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }\n.ds-button-glass:hover { transform: translateY(-2px); border-color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.24); }\n.ds-button-glass:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }\n@media (prefers-reduced-motion: reduce) { .ds-button-glass { transition: none; } }"
+    },
+    {
+      "name": "Chip de categoría",
+      "kind": "chip",
+      "refersTo": "category-chip",
+      "description": "Enlace de categoría con marca breve y estado activo de alto contraste.",
+      "html": "<a class=\"ds-chip\" href=\"#\"><span class=\"ds-chip__brand\">BR</span> Material escolar <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-chip { min-height: 47px; display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.58rem 0.88rem 0.58rem 0.55rem; border: 1px solid rgba(66,43,73,0.12); border-radius: 999px; background: rgba(255,255,255,0.68); box-shadow: 0 5px 14px rgba(60,38,69,0.045); color: #3e2b45; font: 750 0.72rem/1.2 var(--font-ui); text-decoration: none; transition: transform 170ms ease, background 170ms ease, border-color 170ms ease, box-shadow 170ms ease; }\n.ds-chip__brand { padding: 0.2rem 0.46rem; border-radius: 999px; background: #f4e8f5; color: #693a78; font-size: 0.6rem; font-weight: 850; white-space: nowrap; }\n.ds-chip:hover, .ds-chip[aria-current=\"page\"] { transform: translateY(-2px); border-color: rgba(156,54,108,0.42); background: #642653; color: #fff; }\n.ds-chip:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }\n@media (prefers-reduced-motion: reduce) { .ds-chip { transition: none; } }"
+    },
+    {
+      "name": "Acceso de marca translúcido",
+      "kind": "custom",
+      "refersTo": "brand-launcher",
+      "description": "Enlace de marca sobre el campo berry, con monograma circular y lectura en dos niveles.",
+      "html": "<a class=\"ds-brand-launcher\" href=\"#\"><span class=\"ds-brand-launcher__mark\">BR</span><span class=\"ds-brand-launcher__copy\"><small>Ideas para cada día</small><strong>BR</strong></span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-brand-launcher { min-height: 86px; display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 1rem 0.75rem 0.78rem; border: 1px solid rgba(255,255,255,0.62); border-radius: 999px; background: rgba(255,249,255,0.2); box-shadow: 0 16px 32px rgba(32,9,38,0.19); color: #fff; backdrop-filter: blur(22px) saturate(150%); text-decoration: none; transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease; }\n.ds-brand-launcher__mark { width: 55px; height: 55px; display: grid; place-items: center; flex: 0 0 auto; border: 1px solid rgba(255,255,255,0.76); border-radius: 50%; background: rgba(255,255,255,0.2); font: 850 0.86rem/1 var(--font-ui); }\n.ds-brand-launcher__copy { display: grid; gap: 0.08rem; flex: 1; }\n.ds-brand-launcher__copy small { color: #f7d9e9; font: 650 0.61rem/1.2 var(--font-ui); }\n.ds-brand-launcher__copy strong { font: 560 1.27rem/1.1 var(--font-display); letter-spacing: -0.02em; }\n.ds-brand-launcher svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }\n.ds-brand-launcher:hover { transform: translateY(-4px) scale(1.015); background: rgba(255,250,255,0.3); box-shadow: 0 22px 40px rgba(32,9,38,0.24); }\n.ds-brand-launcher:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }\n@media (prefers-reduced-motion: reduce) { .ds-brand-launcher { transition: none; } }"
+    },
+    {
+      "name": "Zona de imagen de producto",
+      "kind": "custom",
+      "refersTo": "product-image-well",
+      "description": "Contenedor redondeado para fotografía real o para el estado pendiente de carga.",
+      "html": "<div class=\"ds-image-well\" role=\"img\" aria-label=\"Imagen pendiente de cargar\"><span class=\"ds-image-well__mark\" aria-hidden=\"true\">＋</span><span>Imagen pendiente de cargar</span></div>",
+      "css": ".ds-image-well { aspect-ratio: 0.98 / 1; display: grid; place-content: center; justify-items: center; gap: 0.65rem; border-radius: 27px; background: linear-gradient(145deg,#f1e8f1,#eadde9 54%,#f9edf2); color: #625169; text-align: center; font: 700 0.68rem/1.4 var(--font-ui); }\n.ds-image-well__mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,0.65); font-size: 1.25rem; }"
+    },
+    {
+      "name": "Campo de administración",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Campo claro de catálogo con foco lavanda y contorno rosa.",
+      "html": "<label class=\"ds-field\"><span>Usuario</span><input type=\"text\" autocomplete=\"username\"></label>",
+      "css": ".ds-field { display: grid; gap: 0.38rem; color: var(--ink); font: 700 0.75rem/1.4 var(--font-ui); }\n.ds-field input { width: 100%; min-height: 46px; padding: 0.65rem 0.72rem; border: 1px solid rgba(67,43,73,0.22); border-radius: 14px; background: #fff; color: var(--ink); font: 400 15px/1.6 var(--font-ui); }\n.ds-field input:focus-visible { outline: 3px solid rgba(203,93,148,0.32); border-color: #a1396b; }"
+    },
+    {
+      "name": "Campo principal del escaparate",
+      "kind": "custom",
+      "refersTo": "hero-shell",
+      "description": "Campo de portada ciruela con accesos táctiles a las dos marcas.",
+      "html": "<section class=\"ds-hero\"><h1>Un mundo de <span>hallazgos.</span></h1><p>Explora las colecciones de BR y Bressy Rosse.</p></section>",
+      "css": ".ds-hero { min-height: 510px; padding: clamp(2rem,6.5vw,5.4rem); border: 1px solid rgba(255,255,255,0.46); border-radius: 42px; background: radial-gradient(ellipse at 79% 13%,rgba(255,190,220,0.36),transparent 23rem), radial-gradient(ellipse at 19% 102%,rgba(128,72,154,0.56),transparent 31rem), linear-gradient(126deg,#32173d 4%,#642653 56%,#8c3a70 100%); box-shadow: 0 24px 54px rgba(62,25,68,0.2); color: #fff9fc; }\n.ds-hero h1 { max-width: 10ch; margin: 0; font: 520 clamp(3.2rem,6vw,5.7rem)/0.94 var(--font-display); letter-spacing: -0.052em; }\n.ds-hero h1 span { color: #ffc4d8; }\n.ds-hero p { max-width: 48ch; color: #f4e8f2; font: 400 clamp(0.9rem,1.2vw,1.05rem)/1.7 var(--font-ui); }\n@media (max-width: 680px) { .ds-hero { min-height: 0; border-radius: 32px; } .ds-hero h1 { font-size: clamp(3.15rem,13.8vw,4.6rem); } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El escaparate de luz fluida",
+    "overview": "Una portada une BR y Bressy Rosse en un recorrido de catálogo claro y contemporáneo. La composición deja aire entre secciones, reserva los titulares para una serif expresiva y mantiene las rutas de marca, categorías y descuentos fáciles de reconocer.\n\nLa luz suave y el vidrio translúcido dan profundidad a los controles flotantes sobre un campo ciruela y rosa. Las demás superficies permanecen claras, con contraste suficiente para leer nombres, precios y categorías. El contenido de productos proviene del catálogo autorizado.",
+    "keyCharacteristics": [
+      "Vitrina luminosa en ciruela y rosa, rodeada de superficies perladas.",
+      "Fraunces para titulares y nombres destacados; Manrope para navegación y lectura.",
+      "Formas circulares y tipo píldora en navegación, botones y accesos de categoría."
+    ],
+    "rules": [
+      {
+        "name": "The Rose-Signal Rule",
+        "body": "El rosa marca foco y promoción; los fondos amplios se mantienen perlados o ciruela para conservar una jerarquía tranquila.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Usa Fraunces para titulares y nombres destacados; usa Manrope para navegación, formularios, precios y texto de lectura.",
+        "section": "typography"
+      },
+      {
+        "name": "The Glass-Control Rule",
+        "body": "Reserva el desenfoque translúcido para la cabecera flotante y los accesos de marca; deja el texto de catálogo sobre superficies claras y legibles.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Soft-Edge Rule",
+        "body": "Mantén las acciones y la navegación redondeadas; aplica esquinas suaves a los bloques amplios y evita volver al aspecto de cajas cuadradas.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do: Mantén los nombres y las categorías de BR y Bressy Rosse de acuerdo con el catálogo real.",
+      "Do: Conserva texto legible y contraste claro sobre cada capa translúcida.",
+      "Do: Usa la silueta de píldora en navegación, botones y categorías.",
+      "Do: Muestra los precios en Bs cuando el catálogo autorizado los proporciona."
+    ],
+    "donts": [
+      "Don't: No extiendas el desenfoque de vidrio a todo el contenido o a las fichas de producto.",
+      "Don't: No inventes productos, fotografías, precios, testimonios o afirmaciones; usa solo datos y medios aprobados.",
+      "Don't: No conviertas el catálogo de exploración en un flujo de compra o pago."
+    ]
+  }
+}

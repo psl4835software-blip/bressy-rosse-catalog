@@ -1,0 +1,44 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "bressy-rosse-catalog",
+	"workers_dev": true,
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2026-11-18",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"services": [
+		{
+			"binding": "WORKER_SELF_REFERENCE",
+			"service": "bressy-rosse-catalog"
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "bressy-rosse-catalog",
+			"database_id": "3123edf5-7614-4e95-a819-8a220e70b02c",
+			"migrations_dir": "migrations"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "PRODUCT_IMAGES",
+			"bucket_name": "bressy-rosse-product-images"
+		}
+	],
+	"vars": {
+		"BETTER_AUTH_URL": "https://bressy-rosse-catalog.inventario-saas.workers.dev"
+	},
+	"secrets": {
+		"required": ["BETTER_AUTH_SECRET"]
+	},
+	"observability": {
+		"enabled": true
+	}
+}
